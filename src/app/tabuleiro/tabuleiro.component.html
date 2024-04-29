@@ -1,0 +1,16 @@
+<h1>Tic Tac Toe</h1>
+<div >
+  <p>Vez do jogador: {{ jogador }}</p> <button class="jogarOX" (click)="iniciaJogo()">Jogar outra vez!</button> <br/><br/>
+
+  <div *ngFor="let row of jogo; let i=index">
+    <div class="row">
+      <button class="botao" *ngFor="let cell of row; let j=index" (click)="espacoClick(i, j)"
+       [disabled]="cell !== ''">{{ cell  }}</button>
+    </div>
+  </div>
+</div>
+
+  <p class="res1" *ngIf="vencedor && vencedor !== 'Empate'">Venceu o jogador: {{ vencedor }}</p>
+  <p class="res2" *ngIf="vencedor === 'Empate'">Empate!</p>
+
+

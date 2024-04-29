@@ -1,0 +1,42 @@
+.botao{
+  background-color: rgb(47, 49, 73);
+  width: 250px;
+  height: 250px;
+  color: white;
+  font-size: 70px;
+  border-radius: 25px;
+ 
+
+
+}
+.botao:hover{
+  background-color: rgb(92, 93, 105);
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  width: 750px;
+}
+
+.jogarOX{
+  background-color: cadetblue;
+  border-radius: 15px;
+  height: 25px;
+  width: 150px;
+  color: antiquewhite;
+}
+
+.jogarOX:hover{
+  background-color: rgb(114, 113, 207);
+
+}
+
+.res1{
+  font-size: 50px;
+}
+.res2{
+  font-size: 50px;
+}
